@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+    box-sizing: border-box;}
+	
+	.container{
+		width:1020px;
+		margin:0px auto;
+	}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  background-color: #f1f1f1;
+
+}
+
+.flex-container > div {
+  background-color:hsla(0,7%,48%,1.00) ;
+  color:black;
+  margin: 10px;
+  font-size: 14px;
+  padding: 10px 10px 5px 10px;
+}
+.flex-responsive {
+    flex: 100%;
+}
+.flex-responsive {
+    flex: 30%;
+	
+}
+#tabs{
+	background-color: hsla(0,4%,40%,1.00);
+	width: 300px;		
+}
+
+header{
+  width:100%;
+  height:30px;
+  text-align: center;
+  font-size: 30px;
+  font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  background-color:hsla(7,25%,80%,1.00);
+
+
+}
+footer{
+  width:100%;
+  height:50px;
+	padding-top: 10px;
+	padding-left: 10px;
+  background-color:hsla(0,4%,60%,1.00);
+}
+nav{
+  	width:100%;
+  	height:50px;
+	margin:10px 0 10px 0;
+	padding-top: 10px;
+  	background-color:hsla(0,54%,81%,1.00);
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;  
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: black;
+  padding: 8px;
+  background-color: #dddddd;
+
+}
+@media (max-width:1019px){
+	.container{width:90%;}
+	.makeMeStack{
+		flex:100%;
+		
+	}
+}
+	

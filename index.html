@@ -3,18 +3,97 @@
 <head>
 <meta charset="UTF-8">
 	<link rel="stylesheet" href="main.css">
-<title>Untitled Document</title>
+	  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+  <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+  <link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+<title>Self Care</title>
+<div class="makeMeStack" style="flex-grow: 1" >  </div>
 </head>
 
 <body>
-	    <div class="container">
-<header>Flexbox sample</header>
-<nav>Nav bar goes here.  Might I <a href="https://www.w3schools.com/css/css_navbar_horizontal.asp">suggest this</a>?</nav>
-<div class="flex-container">
-  <div class="makeMeStack" style="flex-grow: 2">1</div>
-  <div class="makeMeStack" style="flex-grow: 1">2</div>
-  <div style="flex-grow: 2" > <p>Integer ullamcorper tincidunt felis sed lobortis. Sed sapien odio, porttitor nec nisi ut, convallis pharetra metus. Nam vel mauris ac turpis varius pretium non eget tellus. Ut augue eros, sollicitudin id venenatis vel, convallis ut risus. Nam luctus eros eu urna consequat luctus. Cras tempus erat sit amet mi varius, vel iaculis lectus facilisis. Aenean porta ipsum eget risus tincidunt laoreet euismod id sapien. Etiam vel purus vitae leo tincidunt faucibus. Suspendisse ac orci lobortis, iaculis massa ut, dictum purus. </p></div>
-			</div>
-			<footer>Copyright 2024 Nicole Tey </footer></div>
+	<div class="container">
+<header>Care For the Soul</header>
+<nav><ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>			
+</nav>
+  <div class="flex-container">
+
+<div class="makeMeStack" style="flex-grow: 1" >
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Self Care on a Budget</a></li>
+      <li><a href="#tabs-2">Improved Mental Health</a></li>
+      <li><a href="#tabs-3">Increased Energy and Productivity</a></li>
+    </ul>
+    <div id="tabs-1">
+      <p>
+      <h2>Self Care on a Budget</h2>
+      Creating a calming environment, using things you already have at home, can greatly enhance your mood and well-being without any cost.
+      </p>
+    </div>
+    <div id="tabs-2">
+      <p>Regular self-care activities can reduce anxiety, depression, and stress. Taking time for oneself helps improve mood and fosters a sense of emotional well-being</p>
+    </div>
+    <div id="tabs-3">
+      <p>By prioritizing self-care, women can recharge mentally and physically. This rejuvenation leads to greater focus, enhanced productivity, and a renewed zest for daily tasks</p>
+    </div>
+  </div>
+  
+  <div class="makeMeStack" style="flex-grow: 1"></div></div>
+<div class="makeMeStack" style="flex-grow: 1" ><img src="images/meditate self care.png" alt="meditate" width="300px"> </div>
+<div style="flex-grow: 2" ><img src="images/self care joy.png" alt="Woman smiling" width:="50px">
+    <h2> Why is Self-Care important?</h2>
+      <p> <b><em>Self-Care </em></b> is essential for maintaining a healthy and balanced lifestyle, allowing you to function at your best in all areas of life. </p>
+      <h3>What is Self-Care?</h3>
+      <p> <b> <em>Self-Care </em></b> is taking time to do things that help you feel good, healthy, and happy. It's about looking after your <i>own </i>physical, mental, and emotional well-being. </p>
+    </div>
+    <div class="stack section_R" style="flex: 50%;">
+      <div>
+        <h1>Self care tips!! </h1>
+        <h2>Establish a Daily Routine:</h2>
+        <p> Create a structured daily routine that includes time for work, relaxation, and personal interests. Incorporate activities that bring you joy, such as reading, exercising, or spending time in nature. A routine can provide a sense of stability and purpose. </p>
+      </div>
+      <div>
+        <p>
+        <h2>Practice Mindfulness and Meditation:</h2>
+        Set aside a few minutes each day to practice mindfulness or meditation. This can help reduce stress, improve your mood, and enhance your overall mental well-being. Consider using apps or guided meditations toget started if you're new to these practices
+        </p>
+      </div>
+    </div>
+    <div class="flex-container" style="flex-grow: 2">
+      <div class="flex-responsive" >
+        <h2>Self Care</h2>
+        <p> "Taking care of yourself doesn't mean me first, it means me too." <br>
+          - L.R. Knost</p>
+      </div>
+      <div class="flex-responsive">
+        <h2>Self Love</h2>
+        <p>"You yourself, as much as anybody in the entire universe, deserve your love and affection" <br>
+          -Buddha</p>
+      </div>
+      <div class="flex-responsive">
+        <h2>Self Care</h2>
+        <p> "Self-care is not a luxury; it is a necessity."<br>
+          -Audre Lorde</p>
+      </div>
+    </div>
+</div>
+  <footer>Copyright 2024 Nicole Tey </footer>
+<script type="text/javascript">
+$( function() {
+   $( "#tabs" ).tabs();
+  } );
+  </script>
+	</div>
 </body>
 </html>
