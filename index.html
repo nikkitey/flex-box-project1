@@ -12,6 +12,7 @@
 <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+	
 <title>Self Care</title>
 <div class="makeMeStack" style="flex-grow: 1" >  </div>
 </head>
@@ -50,7 +51,12 @@
   </div>
   
   <div class="makeMeStack" style="flex-grow: 1"></div></div>
-<div class="makeMeStack" style="flex-grow: 1" ><img src="images/meditate self care.png" alt="meditate" width="300px"> </div>
+<div class="makeMeStack" style="flex-grow: 1" ><img src="images/meditate self care.png" alt="meditate" width="300px"> <br>
+		<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+		</div>
 <div style="flex-grow: 2" ><img src="images/self care joy.png" alt="Woman smiling" width:="50px">
     <h2> Why is Self-Care important?</h2>
       <p> <b><em>Self-Care </em></b> is essential for maintaining a healthy and balanced lifestyle, allowing you to function at your best in all areas of life. </p>
@@ -94,6 +100,23 @@ $( function() {
    $( "#tabs" ).tabs();
   } );
   </script>
+	<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
 	</div>
 </body>
 </html>
